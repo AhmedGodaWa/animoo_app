@@ -1,3 +1,5 @@
+import 'package:animoo_app/core/app/app_router.dart';
+import 'package:animoo_app/core/app/app_routes.dart';
 import 'package:animoo_app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +15,8 @@ class AnimooApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
+      initialRoute: AppRoutes.login,
+      onGenerateRoute: AppRouter.onGenerateRoute,
     );
   }
 }
