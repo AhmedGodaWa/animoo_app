@@ -9,7 +9,6 @@ class AppTheme {
     useMaterial3: true,
 
     fontFamily: 'Poppins',
-
     scaffoldBackgroundColor: AppColors.background,
 
     colorScheme: const ColorScheme.light(
