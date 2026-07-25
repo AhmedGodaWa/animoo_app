@@ -1,6 +1,9 @@
+import 'package:animoo_app/features/auth/create_new_password/create_new_password_screen.dart';
 import 'package:animoo_app/features/auth/forgot_password/forget_password_screen.dart';
 import 'package:animoo_app/features/auth/login/login_screen.dart';
+import 'package:animoo_app/features/auth/otp_verification/otp_verification_screen.dart';
 import 'package:animoo_app/features/auth/signup/signup_screen.dart';
+import 'package:animoo_app/features/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'app_routes.dart';
@@ -17,20 +20,16 @@ class AppRouter {
       case AppRoutes.forgetPassword:
         return MaterialPageRoute(builder: (_) => const ForgetPasswordScreen());
 
-      // case AppRoutes.otpVerification:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const OtpVerificationScreen(),
-      //   );
+      case AppRoutes.otpVerification:
+        return MaterialPageRoute(builder: (_) => const OtpVerificationScreen());
 
-      // case AppRoutes.createNewPassword:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const CreateNewPasswordScreen(),
-      //   );
+      case AppRoutes.createNewPassword:
+        return MaterialPageRoute(
+          builder: (_) => const CreateNewPasswordScreen(),
+        );
 
-      // case AppRoutes.home:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const HomeScreen(),
-      //   );
+      case AppRoutes.home:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
 
       default:
         return MaterialPageRoute(
