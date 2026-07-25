@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-
-
   static const Color primary = Color(0xFF04332D);
 
   // Basic Colors
@@ -17,6 +15,7 @@ class AppColors {
   static const Color border = Color(0xFFEDEDED);
   static const Color focusedBorder = primary;
   static const Color errorBorder = Color(0xFFFC1B1A);
+  static const Color bottomSheetBackground = Color(0xFFD8D8D8);
 
   // Text Colors
   static const Color textPrimary = black;

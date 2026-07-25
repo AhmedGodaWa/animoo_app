@@ -19,6 +19,17 @@ class AppTheme {
       onSurface: AppColors.textPrimary,
     ),
 
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.background,
+      elevation: 0,
+      centerTitle: false,
+      titleSpacing: 0,
+      leadingWidth: 35,
+      scrolledUnderElevation: 0,
+      iconTheme: const IconThemeData(color: AppColors.primary),
+      titleTextStyle: AppTextTheme.textTheme.headlineLarge,
+    ),
+
     textTheme: AppTextTheme.textTheme,
 
     inputDecorationTheme: InputDecorationTheme(

@@ -60,6 +60,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 hintText: 'Enter your email address',
                                 controller: _emailController,
                                 validator: AppValidators.email,
+                                keyboardType: TextInputType.emailAddress,
+                                textInputAction: TextInputAction.next,
                               ),
 
                               const SizedBox(height: 20),
@@ -67,9 +69,11 @@ class _LoginScreenState extends State<LoginScreen> {
                               AppTextField(
                                 label: 'Password',
                                 hintText: '********',
+                                keyboardType: TextInputType.visiblePassword,
+                                textInputAction: TextInputAction.done,
                                 controller: _passwordController,
                                 validator: AppValidators.password,
-                                obscureText: true,
+                                obscureText: _obscurePassword,
                                 suffixIcon: IconButton(
                                   onPressed: () {
                                     setState(() {
